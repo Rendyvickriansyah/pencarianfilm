@@ -22,11 +22,6 @@ const Homepage = () => {
 		navigate(`/movies/${film.id}`);
 	};
 
-	// const resetSearch = () => {
-	// 	setSearchResults([]);
-	// 	setIsSearching(false);
-	// };
-
 	return (
 		<div className="">
 			<Hero data={heroBannerData} />
@@ -35,13 +30,6 @@ const Homepage = () => {
 				<SearchBar onSearch={handleSearch} />
 				{isSearching ? (
 					<>
-						{/* <button
-							type="button"
-							onClick={resetSearch}
-							className="mb-16 bg-gray-700 text-gray-400 border border-gray-500 hover:bg-gray-600 font-medium rounded-lg text-sm px-4 py-2 text-center focus:ring-4 focus:outline-none focus:ring-gray-500"
-						>
-							Reset Search
-						</button> */}
 						<div className="flex gap-5">
 							{searchResults.map((film) => (
 								<MovieCard
