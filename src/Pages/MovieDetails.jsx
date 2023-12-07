@@ -92,7 +92,7 @@ const MovieDetail = () => {
 						<p className="text-neutral-400 sm:text-base md:text-lg ">
 							Director
 						</p>
-						<h5 className="text-neutral-200 sm:text-base md:text-lg ">
+						<h5 className="text-neutral-200 font-medium sm:text-base md:text-lg ">
 							{director}
 						</h5>
 					</div>
@@ -100,7 +100,7 @@ const MovieDetail = () => {
 						<p className="text-neutral-400 sm:text-base md:text-lg ">
 							Release date
 						</p>
-						<h5 className="text-neutral-200 sm:text-base md:text-lg ">
+						<h5 className="text-neutral-200 font-medium sm:text-base md:text-lg ">
 							{releaseYear}
 						</h5>
 					</div>
