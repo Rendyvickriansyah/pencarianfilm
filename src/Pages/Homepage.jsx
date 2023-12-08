@@ -30,7 +30,7 @@ const Homepage = () => {
 				<SearchBar onSearch={handleSearch} />
 				{isSearching ? (
 					<>
-						<div className="flex gap-5">
+						<div className="flex gap-8 sm:gap-8 md:gap-5 flex-wrap justify-center md:justify-normal">
 							{searchResults.map((film) => (
 								<MovieCard
 									key={film.id}
@@ -46,7 +46,7 @@ const Homepage = () => {
 						</div>
 					</>
 				) : (
-					<div className="movie-lists flex sm:gap-8 md:gap-5 flex-wrap sm:justify-center md:justify-normal">
+					<div className="movie-lists flex gap-8 sm:gap-8 md:gap-5 flex-wrap justify-center md:justify-normal">
 						{allData.map((film) => (
 							<MovieCard
 								key={film.id}

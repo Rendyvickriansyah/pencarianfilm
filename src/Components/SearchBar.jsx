@@ -9,7 +9,7 @@ const SearchBar = ({ onSearch }) => {
 
 	return (
 		<>
-			<div className="flex mb-12 md:max-w-md">
+			<div className="flex mb-12 md:max-w-md px-4 md:px-0">
 				<input
 					type="text"
 					value={searchQuery}

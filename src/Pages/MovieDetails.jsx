@@ -35,23 +35,31 @@ const MovieDetail = () => {
 					alt="Background"
 					className="object-cover w-full h-full"
 				/>
-				<div className="absolute inset-0 flex flex-col justify-end sm:px-4 md:px-8 lg:px-20 pb-16">
+				<div className="absolute inset-0 flex flex-col justify-end px-4 md:px-8 lg:px-20 pb-16">
 					<div className="absolute inset-0 bg-gradient-to-t from-neutral-950 to-transparent"></div>
 					<div className="relative z-10 ">
 						<div>
-							<h5 className="text-white sm:text-2xl md:text-3xl lg:text-4xl font-extrabold sm:mb-3 mb-5">
+							<h5 className="text-white text-3xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold  mb-2 sm:mb-3 md:mb-5">
 								{title}
 							</h5>
-							<div className="flex gap-4 items-center sm:mb-3 mb-5">
+							<div className="flex gap-4 items-center mb-2 sm:mb-3 md:mb-5">
 								<Rating rating={rating} />
-								<span className="text-neutral-400 sm:text-base text-xl">|</span>
-								<p className="text-neutral-400 sm:text-base text-xl">{rated}</p>
-								<span className="text-neutral-400 sm:text-base text-xl">|</span>
-								<p className="text-neutral-400 sm:text-base text-xl">
+								<span className="text-neutral-400 sm:text-base md:text-xl">
+									|
+								</span>
+								<p className="text-neutral-400 sm:text-base md:text-xl">
+									{rated}
+								</p>
+								<span className="text-neutral-400 sm:text-base md:text-xl">
+									|
+								</span>
+								<p className="text-neutral-400 sm:text-base md:text-xl">
 									{releaseYear}
 								</p>
-								<span className="text-neutral-400 sm:text-base text-xl">|</span>
-								<p className="text-neutral-400 sm:text-base text-xl">
+								<span className="text-neutral-400 sm:text-base md:text-xl">
+									|
+								</span>
+								<p className="text-neutral-400 sm:text-base md:text-xl">
 									{duration}
 								</p>
 							</div>
@@ -67,7 +75,7 @@ const MovieDetail = () => {
 									type="button"
 									className="bg-gray-700 text-gray-400 border border-gray-500 hover:bg-gray-600 font-medium rounded-lg px-4 py-2 text-center focus:ring-4 focus:outline-none focus:ring-gray-500"
 								>
-									<i class="ri-add-line"></i>
+									<i className="ri-add-line"></i>
 									Add to Watchlist
 								</button>
 							</div>
@@ -75,7 +83,7 @@ const MovieDetail = () => {
 					</div>
 				</div>
 			</div>
-			<div className="sm:px-4 md:px-8 lg:px-20 bg-neutral-950 flex sm:flex-col xl:flex-row sm:gap-8 lg:gap-12 2xl:gap-24">
+			<div className="pt-12 px-4 md:px-8 lg:px-20 bg-neutral-950 flex flex-col xl:flex-row gap-8 lg:gap-12 2xl:gap-24">
 				<div className="auto sm:w-full xl:w-6/12">
 					<h2 className="font-bold text-white sm:text-xl md:text-2xl sm:mb-1 md:mb-3">
 						Synopsis

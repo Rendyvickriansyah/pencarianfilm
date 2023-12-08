@@ -23,10 +23,10 @@ const Hero = ({ data }) => {
 				alt="Background"
 				className="object-cover w-full h-full"
 			/>
-			<div className="absolute inset-0 flex flex-col justify-end sm:px-4 md:px-8 lg:px-20 pb-24">
+			<div className="absolute inset-0 flex flex-col justify-end px-4 sm:px-4 md:px-8 lg:px-20 pb-24">
 				<div className="absolute inset-0 bg-gradient-to-t from-neutral-950 to-transparent"></div>
 				<div className="relative z-10  2xl:w-2/5 xl:w-3/5">
-					<h5 className="text-white sm:text-2xl md:text-3xl lg:text-2xl xl:text-4xl font-extrabold sm:mb-3 md:mb-3 lg:mb-2 xl:mb-5 ">
+					<h5 className="text-white text-3xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-4xl font-extrabold sm:mb-3 md:mb-3 lg:mb-2 xl:mb-5 ">
 						{data[0].title}
 					</h5>
 					<div className="flex gap-4 items-center sm:mb-3 md:mb-3 lg:mb-2 xl:mb-5">
@@ -41,7 +41,7 @@ const Hero = ({ data }) => {
 							{data[0].releaseYear}
 						</p>
 					</div>
-					<p className="text-neutral-400 lg:text-lg xl:text-xl  mb-5">
+					<p className="text-neutral-400 text-sm lg:text-lg xl:text-xl mb-5">
 						{synopsis}
 					</p>
 					<div className="flex gap-2 mb-5">
@@ -50,7 +50,7 @@ const Hero = ({ data }) => {
 						))}
 					</div>
 
-					<div className="button-group mb">
+					<div className="button-group">
 						<button
 							type="button"
 							className="text-neutral-700 bg-neutral-50 hover:bg-neutral-300 focus:ring-4 focus:outline-none focus:ring-neutral-500 font-medium rounded-lg text-sm px-4 py-2 text-center me-3"
